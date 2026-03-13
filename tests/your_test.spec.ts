@@ -11,6 +11,7 @@ import LeaveStartDatePage from "./pages/leaveStartDatePage"
 test(`Your test - an alternate path`, async ({ page }): Promise<void> => {
     // Write your test here!
     // Add comments first to outline the steps then SHOW US YOUR STEPS BEFORE you start writing code!
+    await page.goto('https://www.gov.uk/calculate-your-holiday-entitlement');
 
     // 1. Landing Page
     const landingPage: LandingPage = new LandingPage(page);
